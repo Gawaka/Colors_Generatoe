@@ -49,7 +49,11 @@ function setRandomColors(isInitial) {
             return
         }
 
-        const color = isInitial ? colors[index] : generationColor()
+        const color = isInitial 
+            ? colors[index]
+                ? colors[index]
+                : generationColor()
+            : generationColor()
 
         if (!isInitial) {
             colors.push(color)
