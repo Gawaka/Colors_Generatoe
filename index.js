@@ -7,6 +7,11 @@ document.addEventListener('keydown', (event) => {
     }
 })
 
+document.querySelector('.btn').addEventListener('touchstart', (event) => {
+    event.preventDefault()
+        setRandomColors()
+})
+
 document.addEventListener('click', (event) => {
     const type = event.target.dataset.type
 

@@ -2,6 +2,7 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    transition: 0,4s;
 }
 
 body {
@@ -16,9 +17,25 @@ body {
     justify-content: space-between;
 }
 
-@media screen and (max-width: 426px) {
+@media screen and (max-width: 769px) {
     .wrapper {
         flex-direction: column;
+    }
+}
+
+.btn {
+    border-radius: 0;
+    height: 70px;
+    background: linear-gradient(217deg, rgba(252,135,232,1) 36%, rgba(33,235,222,0.919502835313813) 75%);
+    color: aliceblue;
+    outline: none;
+    border: none;
+    display: block;
+}
+
+@media screen and (min-width: 769px) {
+    .btn {
+        display: none;
     }
 }
 
